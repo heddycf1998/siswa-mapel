@@ -120,7 +120,7 @@ mvc-siswa-upgrade/
 2. Import database :
    - Buka phpMyAdmin
    - Buat database `db_siswa`
-   - Import file `database/db_siswa.sql`
+   - Import file `db_siswa.sql`
 3. Jalankan project di localhost atau XAMPP
 4. Akses melalui browser:
    procedural = http://localhost/procedural/login.php
