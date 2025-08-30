@@ -129,8 +129,8 @@ mvc-siswa-upgrade/
 
 ## 🔑 Akun Default
 Admin:
-*Username: admin
-*Password: admin123
+  Username: admin
+  Password: admin123
 
 📝 Catatan
 Proyek ini masih tahap belajar.
