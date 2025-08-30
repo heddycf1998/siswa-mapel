@@ -34,7 +34,7 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 ## 📂 Struktur Folder : 
 *(Lihat langsung di tab **Code** agar lebih rapih)*
 
-**1** Procedural : Tahap Awal
+**1.** Procedural : Tahap Awal
 ```
 procedural/
 ├── mapel/ # CRUD mapel
@@ -50,7 +50,7 @@ procedural/
 ├── register.php # form register
 ```
 
-**2** MVC-Siswa : Pisah File dan Campuran
+**2.** MVC-Siswa : Pisah File dan Campuran
 ```
 mvc-siswa/
 ├── app/
@@ -78,7 +78,7 @@ mvc-siswa/
 │ └── index.php # Router utama
 ```
 
-**3** MVC-Siswa : Lebih Rapih
+**3.** MVC-Siswa : Lebih Rapih
 ```
 mvc-siswa-upgrade/
 ├── app/
