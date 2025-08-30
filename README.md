@@ -31,8 +31,12 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 3. **MVC Lebih Rapi**  
    Struktur folder lebih teratur, ada `controller/`, `model/`, `view/`, `config/`.
 
-## 📂 Struktur Folder : (Liatnya di code biar rapih)
-**1** procedural/
+## 📂 Struktur Folder : 
+*(Lihat langsung di tab **Code** agar lebih rapih)*
+
+**1** 
+```
+procedural/
 ├── mapel/ # CRUD mapel
 ├── siswa/ # CRUD siswa
 ├── auth.php # cek session
@@ -44,8 +48,11 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 ├── nav.php # halaman navigasi
 ├── register_proses.php # register koneksi ke Database
 ├── register.php # form register
+```
 
-**2** mvc-siswa/
+**2** 
+```
+mvc-siswa/
 ├── app/
 │ ├── controller/
 │ │ ├── AuthController.php # Mengatur login & registrasi
@@ -69,8 +76,11 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 ├── public/
 │ ├── style.css
 │ └── index.php # Router utama
+```
 
-**3** mvc-siswa-upgrade/
+**3** 
+```
+mvc-siswa-upgrade/
 ├── app/
 │ ├── controller/
 │ │ ├── AuthController.php # Mengatur login & registrasi
@@ -95,6 +105,7 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 │ ├── .htaccess # Konfigurasi Apache (URL rewriting)
 │ ├── index.php # Router utama
 │ └── style.css # File CSS untuk tampilan
+```
 
 ## ⚙️ Teknologi
 - **PHP** (Procedural → MVC campuran)
