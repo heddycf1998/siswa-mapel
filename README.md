@@ -31,7 +31,7 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
 3. **MVC Lebih Rapi**  
    Struktur folder lebih teratur, ada `controller/`, `model/`, `view/`, `config/`.
 
-## 📂 Struktur Folder :
+## 📂 Struktur Folder : (Liatnya di code biar rapih)
 **1** procedural/
 ├── mapel/ # CRUD mapel
 ├── siswa/ # CRUD siswa
