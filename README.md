@@ -111,7 +111,7 @@ mvc-siswa-upgrade/
 - **PHP** (Procedural → MVC campuran)
 - **MySQL** (phpMyAdmin)
 - **HTML, CSS**
-- **JavaScript (sedikit, untuk interaksi dasar)**
+- **JavaScript** (sedikit, untuk interaksi dasar)
 
 ## 🚀 Cara Menjalankan
 1. Clone repository:
@@ -123,9 +123,11 @@ mvc-siswa-upgrade/
    - Import file `db_siswa.sql`
 3. Jalankan project di localhost atau XAMPP
 4. Akses melalui browser:
+   ...
    procedural = http://localhost/procedural/login.php
    mvc campuran = http://localhost/mvc-siswa/public
    mcv lebih rapih = http://localhost/mvc-siswa/public
+   ...
 
 ## 🔑 Akun Default
 Admin:
