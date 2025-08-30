@@ -123,11 +123,9 @@ mvc-siswa-upgrade/
    - Import file `db_siswa.sql`
 3. Jalankan project di localhost atau XAMPP
 4. Akses melalui browser:
-   ...
-   procedural = http://localhost/procedural/login.php
-   mvc campuran = http://localhost/mvc-siswa/public
-   mcv lebih rapih = http://localhost/mvc-siswa/public
-   ...
+   - procedural = http://localhost/procedural/login.php
+   - mvc campuran = http://localhost/mvc-siswa/public
+   - mcv lebih rapih = http://localhost/mvc-siswa/public
 
 ## 🔑 Akun Default
 Admin:
