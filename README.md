@@ -32,8 +32,7 @@ Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
    Struktur folder lebih teratur, ada `controller/`, `model/`, `view/`, `config/`.
 
 ## 📂 Struktur Folder :
-**1**
-procedural/
+**1** procedural/
 ├── mapel/ # CRUD mapel
 ├── siswa/ # CRUD siswa
 ├── auth.php # cek session
@@ -46,8 +45,7 @@ procedural/
 ├── register_proses.php # register koneksi ke Database
 ├── register.php # form register
 
-**2**
-mvc-siswa/
+**2** mvc-siswa/
 ├── app/
 │ ├── controller/
 │ │ ├── AuthController.php # Mengatur login & registrasi
@@ -72,8 +70,7 @@ mvc-siswa/
 │ ├── style.css
 │ └── index.php # Router utama
 
-**3**
-mvc-siswa-upgrade/
+**3** mvc-siswa-upgrade/
 ├── app/
 │ ├── controller/
 │ │ ├── AuthController.php # Mengatur login & registrasi
