@@ -128,7 +128,6 @@ mvc-siswa-upgrade/
    - mcv lebih rapih = http://localhost/mvc-siswa/public
 
 ## 🔑 Akun Default
-Admin.
 Username :
 ```
 admin
