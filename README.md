@@ -107,6 +107,48 @@ mvc-siswa-upgrade/
 │ └── style.css # File CSS untuk tampilan
 ```
 
+**4.** MVC-Siswa : Punya 3 User
+```
+mvc-siswa/
+├── app/
+│ ├── controller/
+│ │ ├── AuthController.php # Mengatur login & registrasi
+│ │ ├── ErrorController.php # Mengatur Error
+│ │ ├── HomeController.php # Entry Point
+│ │ ├── SiswaController.php # CRUD data siswa
+│ │ ├── MapelController.php # CRUD data mata pelajaran
+│ ├── helper/
+│ │ ├── flash_helper # List Pesan
+│ │ ├── pagination.php # Halaman data
+│ │ ├── Flash.php # Mengatur Pesan
+│ ├── middleware
+│ │ ├── AuthMiddleware.php 
+│ │ ├── GuestMiddleware.php
+│ │ ├── RoleMiddelware.php 
+│ ├── model/
+│ │ ├── BaseModel.php 
+│ │ ├── Siswa.php # Model untuk data siswa
+│ │ ├── Mapel.php # Model untuk data mata pelajaran
+│ │ ├── SiswaMapel.php # Model relasi many-to-many siswa & mapel
+│ │ ├── User.php
+│ ├── view/
+│ │ ├── auth/ # View untuk login & registrasi
+│ │ ├── error # tempat Error 400 dan lainnya
+│ │ ├── layout/ # View untuk kerangka dasar
+│ │ ├── mapel/ # View untuk mapel
+│ │ ├── partial # Flash get key
+│ │ └── siswa/ # View untuk siswa
+├── config/
+│ ├── autoload.php # Otomatis cek Controller & Model
+│ ├── koneksi.php # Koneksi ke database
+│ ├── config.php # Konfigurasi global
+│ └── middleware.php # Akses URL untuk Role
+├── public/
+│ ├── .htaccess # Konfigurasi Apache (URL rewriting)
+│ ├── index.php # Router utama
+│ └── style.css # File CSS untuk tampilan
+```
+
 ## ⚙️ Teknologi
 - **PHP** (Procedural → MVC campuran)
 - **MySQL** (phpMyAdmin)
@@ -138,4 +180,4 @@ admin123
 ```
 
 📝 Catatan
-Proyek ini masih tahap belajar.
+Keep Moving Forward
