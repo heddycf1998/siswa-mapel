@@ -149,11 +149,22 @@ mvc-siswa/
 │ └── style.css # File CSS untuk tampilan
 ```
 
+**5.** MVC-Siswa-CI4 — Versi CodeIgniter 4
+```
+mvc-siswa-ci4/
+├── app/
+├── public/
+├── writable/
+├── composer.json
+└── spark
+
+
 ## ⚙️ Teknologi
 - **PHP** (Procedural → MVC campuran)
 - **MySQL** (phpMyAdmin)
 - **HTML, CSS**
 - **JavaScript** (sedikit, untuk interaksi dasar)
+- **CodeIgniter 4** (versi terbaru)
 
 ## 🚀 Cara Menjalankan
 1. Clone repository:
