@@ -177,9 +177,11 @@ mvc-siswa-ci4/
    - Import file `db_siswa.sql`
 3. Jalankan project di localhost atau XAMPP
 4. Akses melalui browser:
-   - procedural = http://localhost/procedural/login.php
-   - mvc campuran = http://localhost/mvc-siswa/public
-   - mcv lebih rapih = http://localhost/mvc-siswa/public
+   - Procedural → http://localhost/siswa-mapel/procedural/login.php
+   - MVC Awal → http://localhost/siswa-mapel/mvc-siswa/public
+   - MVC Upgrade → http://localhost/siswa-mapel/mvc-siswa-upgrade/public
+   - MVC Upgrade-Up → http://localhost/siswa-mapel/mvc-siswa-upgrade-up/public
+   - CI4 → http://localhost/siswa-mapel/mvc-siswa-ci4/public
 
 ## 🔑 Akun Default
 Username :
