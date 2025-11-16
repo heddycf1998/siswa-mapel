@@ -1,6 +1,6 @@
 # CRUD Siswa & Mata Pelajaran
 
-Proyek ini adalah aplikasi sederhana untuk mengelola data **Siswa** dan **Mata Pelajaran**.  
+Proyek ini adalah aplikasi untuk mengelola data **Siswa** dan **Mata Pelajaran**.  
 Fitur utama meliputi **Create, Read, Update, Delete (CRUD)** serta **login & register (authentication)**.
 
 ## 📌 Fitur
