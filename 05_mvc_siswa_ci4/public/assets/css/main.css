@@ -1,0 +1,19 @@
+/* ==========================================================
+    Global Reset + Fonts
+   ========================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fafc; /* Warna abu-abu soft modern */
+  color: #334155;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

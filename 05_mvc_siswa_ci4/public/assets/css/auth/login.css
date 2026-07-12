@@ -1,0 +1,129 @@
+/* Layout */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 360px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Error */
+.alert-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background: #1e4dc3;
+}
+
+/* */
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   TOMBOL PENGINTIP PASSWORD (LOGIN PAGE SEAMLESS)
+   ========================================================== */
+
+/* Container pembungkus input password */
+.input-password-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Beri padding kanan ekstra agar teks password panjang tidak menumpuk di bawah ikon */
+.input-password-container input {
+  padding-right: 45px;
+}
+
+/* Mengubah Tombol Menjadi Lingkaran Seamless */
+.toggle-password {
+  position: absolute;
+  right: 8px;                  /* Jarak manis dari dinding kanan input */
+  top: 50%;                    /* Posisikan 50% vertical */
+  transform: translateY(-50%); /* Center alignment vertical sempurna */
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 32px;                 /* Membuat lingkaran simetris */
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;              /* Warna default abu-abu soft */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efek Hover Lingkaran Abu-abu Halus */
+.toggle-password:hover {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+/* State Aktif Saat Password Diintip (Lingkaran Biru Soft) */
+.toggle-password.active {
+  background-color: #e0e7ff;   /* Background biru muda */
+  color: #2563eb;              /* Ikon berubah biru tegas matching tombol login */
+}
+
+.toggle-password svg {
+  display: block;
+}

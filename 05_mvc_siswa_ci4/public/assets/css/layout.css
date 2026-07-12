@@ -1,0 +1,60 @@
+/* ==========================================================
+   SHARED LAYOUT STRUCTURE (KERANGKA UTAMA)
+   ========================================================== */
+
+.admin-wrapper,
+.guru-wrapper,
+.siswa-wrapper {
+  display: flex; /* Membuat sidebar dan content berjejer ke samping */
+  min-height: 100vh; /* Memastikan tinggi full layar browser */
+  width: 100%;
+}
+
+.sidebar {
+  width: 260px; /* Mengunci lebar sidebar agar proporsional */
+  padding: 20px 15px;
+  flex-shrink: 0; /* Mencegah sidebar menjadi gepeng saat layar mengecil */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 12px;
+  margin-bottom: 25px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Jarak antar menu */
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 8px; /* Capsule style */
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease; /* Animasi halus */
+}
+
+.sidebar-menu a:hover {
+  padding-left: 20px; /* Efek geser sedikit ke kanan */
+}
+
+.sidebar-menu a.active {
+  font-weight: bold;
+}
+
+.content {
+  flex: 1; /* Menghabiskan sisa slot layar kanan */
+  padding: 30px;
+}

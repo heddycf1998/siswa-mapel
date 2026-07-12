@@ -1,0 +1,392 @@
+/* ==========================================================
+   MURNI WARNA & KOSMETIK TEMA SISWA (LIGHT & FRESH)
+   ========================================================== */
+
+/* Tema Warna Sidebar Siswa */
+.siswa-wrapper .sidebar {
+  background-color: #caddf1; /* Putih soft keabu-abuan (Clean & gak bikin silau) */
+  color: #334155; /* Teks gelap supaya kontrasnya pas */
+  border-right: 2px solid #3b82f6; /* Garis pemisah biru maskulin yang elegan & tegas! */
+}
+.siswa-wrapper .sidebar-brand {
+  color: #1e293b; /* Warna judul/logo gelap mewah */
+  border-bottom-color: #e2e8f0; /* Garis bawah brand yang tipis soft */
+}
+.siswa-wrapper .sidebar-menu a {
+  color: #64748b; /* Warna menu biasa, abu-abu tenang */
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.siswa-wrapper .sidebar-menu a:hover {
+  background-color: #4788ca; /* Sorotan hover abu-abu terang */
+  color: #e1e6f1; /* Teks jadi lebih tegas saat disorot */
+  padding-left: 20px; /* Efek geser interaktif */
+}
+.siswa-wrapper .sidebar-menu a.active {
+  background-color: #e0e7ff; /* Background biru muda soft (Indigo-light) saat aktif */
+  color: #2563eb; /* Teks berubah jadi biru utama */
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(32, 125, 172, 0.3); /* Tambahan aksen bar vertikal di kiri menu biar makin klop! */
+}
+
+/* Background Area Content Siswa */
+.siswa-wrapper .content {
+  background-color: #f8fafc;
+}
+
+/* Warna Komponen Pencarian Siswa */
+.siswa-wrapper .input-cari:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 131, 246, 0.2);
+}
+.siswa-wrapper .btn-cari {
+  background-color: #3b82f6;
+  border: 1px solid #2563eb;
+  color: #ffffff;
+}
+.siswa-wrapper .btn-cari:hover {
+  background-color: #2563eb;
+}
+
+/* Warna Kepala Tabel Siswa */
+.siswa-wrapper .table-siswa th {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Mengatur text-align khusus untuk tabel milik siswa */
+.siswa-wrapper .table-siswa td.col-fill {
+    text-align: left;
+}
+
+/* ==========================================================
+   KOMPONEN HALAMAN PROFIL SISWA (VERSION FULL WIDTH)
+   ========================================================== */
+
+/* Wadah Pembungkus Profil (Card Melebar Konsisten Seperti Dashboard) */
+.siswa-wrapper .profile-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%; /* Membuat lebar penuh ke kanan */
+  box-sizing: border-box;
+}
+
+/* Header/Judul Profil */
+.siswa-wrapper .profile-header {
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.siswa-wrapper .profile-header h2 {
+  margin: 0;
+  font-weight: bold;
+  color: #1e293b;
+}
+.siswa-wrapper .profile-header p {
+  margin: 5px 0 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* Tabel Khusus Informasi Profil */
+.siswa-wrapper .table-profile {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.siswa-wrapper .table-profile tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+.siswa-wrapper .table-profile tr:last-child {
+  border-bottom: none;
+}
+.siswa-wrapper .table-profile td {
+  padding: 14px 0;
+  vertical-align: top;
+}
+
+/* Kolom Kiri (Label Informasi) */
+.siswa-wrapper .table-profile td:first-child {
+  font-weight: 600;
+  color: #64748b;
+  width: 25%; /* Mengunci proporsi ruang label agar rapi */
+}
+
+/* Kolom Kanan (Isi Data) */
+.siswa-wrapper .table-profile td:last-child {
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* Teks NIS Tebal Khusus */
+.siswa-wrapper .table-profile td strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* Wrapper tombol aksi agar bergeser ke kanan */
+.siswa-wrapper .profile-actions {
+  display: flex;
+  justify-content: flex-start; /* Menggeser tombol ke kiri sejajar dengan data */
+  margin-top: 20px;            /* Jarak pas dari batas tabel */
+}
+
+/* Style tombol edit profil */
+.siswa-wrapper .btn-edit {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.siswa-wrapper .btn-edit:hover {
+  background-color: #2563eb;
+}
+
+/* ==========================================================
+   KOMPONEN FORM EDIT PROFIL SISWA (HARMONIS & MATCHING)
+   ========================================================== */
+
+/* Form Profile Wrapper */
+.siswa-wrapper .form-profile {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Jarak antar Group Input */
+.siswa-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Label Input (Warna disamakan dengan label table-profile kamu) */
+.siswa-wrapper .form-group label {
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Input & Textarea Utama */
+.siswa-wrapper .input-profile, 
+.siswa-wrapper .textarea-profile {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Efek Focus (Disamakan persis dengan .input-cari:focus milikmu) */
+.siswa-wrapper .input-profile:focus, 
+.siswa-wrapper .textarea-profile:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 131, 246, 0.2);
+    outline: none;
+}
+
+/* Khusus Textarea */
+.siswa-wrapper .textarea-profile {
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Input NIS Readonly (Menggunakan background area content siswa milikmu) */
+.siswa-wrapper .input-readonly {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #94a3b8;
+    background-color: #f8fafc; /* Sinkron dengan warna .content */
+    cursor: not-allowed;
+    box-sizing: border-box;
+}
+
+/* Wrapper Tombol Form */
+.siswa-wrapper .form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Tombol Simpan (Warna sinkron dengan .btn-cari & .btn-edit) */
+.siswa-wrapper .btn-simpan {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.siswa-wrapper .btn-simpan:hover {
+    background-color: #2563eb;
+}
+
+/* Tombol Batal (Warna netral soft) */
+.siswa-wrapper .btn-batal {
+    background-color: #f1f5f9;
+    color: #64748b;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.siswa-wrapper .btn-batal:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+/* ==========================================================
+   TOMBOL PENGINTIP PASSWORD (SEAMLESS CIRCLE)
+   ========================================================== */
+
+/* Container pembungkus input */
+.siswa-wrapper .input-password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Beri ruang bernapas di kanan agar teks password tidak menabrak ikon */
+.siswa-wrapper .input-password-container .input-profile {
+    padding-right: 50px; 
+}
+
+/* Mengubah Tombol Menjadi Lingkaran Mulus yang Seamless */
+.siswa-wrapper .toggle-password {
+    position: absolute;
+    right: 10px;                  /* Jarak presisi dari dinding kanan input */
+    top: 50%;                    /* Pas 50% karena container sudah bersih dari error merah */
+    transform: translateY(-50%); /* Sentuhan wajib untuk alignment vertical center sempurna */
+    background: transparent;     /* Hilangkan background abu-abu kaku */
+    border: none;                /* Hilangkan border kotak yang bikin penuh */
+    border-radius: 50%;          /* Mengubah bentuk menjadi lingkaran sempurna */
+    width: 32px;                 /* Tinggi & lebar sama rata agar bulat presisi */
+    height: 32px;
+    padding: 0;                  /* Reset padding bawaan button */
+    margin: 0;                   /* Reset margin bawaan */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;              /* Warna ikon abu-abu netral yang soft */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efek Hover (Saat Kursor di Atas Tombol) - Muncul lingkaran abu-abu tipis */
+.siswa-wrapper .toggle-password:hover {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+/* State Aktif (Saat Password Diintip) - Muncul lingkaran biru soft yang estetik */
+.siswa-wrapper .toggle-password.active {
+    background-color: #e0e7ff;   /* Lingkaran biru muda soft */
+    color: #2563eb;              /* Ikon berubah menjadi biru tegas */
+}
+
+/* Memastikan SVG duduk manis tepat di tengah lingkaran */
+.siswa-wrapper .toggle-password svg {
+    display: block;
+}
+
+/* ==========================================================
+   KOSMETIK TEMA FORM UBAH PASSWORD - SISWA
+   ========================================================== */
+
+.siswa-wrapper .form-group-profile label {
+    color: #64748b;
+}
+
+.siswa-wrapper .input-profile {
+    color: #334155;
+}
+
+/* Efek Focus Biru Siswa */
+.siswa-wrapper .input-profile:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 131, 246, 0.2);
+}
+
+.siswa-wrapper .input-readonly {
+    color: #94a3b8;
+    background-color: #f8fafc;
+}
+
+/* TOMBOL SIMPAN (Button) */
+.siswa-wrapper .btn-simpan-profile {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2563eb; /* Warna biru utama sesuai screenshot kamu */
+    color: #ffffff;
+    border: 1px solid transparent; /* Biar tingginya sama persis dengan tombol batal */
+    border-radius: 6px;
+    font-family: inherit;          /* Mengikuti font utama halaman biar gak kaku */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.siswa-wrapper .btn-simpan-profile:hover {
+    background-color: #1d4ed8;
+}
+
+/* TOMBOL BATAL (Link a) */
+.siswa-wrapper .btn-batal-profile {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f1f5f9; /* Abu-abu terang netral */
+    color: #64748b;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    text-decoration: none;     /* Menghilangkan garis bawah link */
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.siswa-wrapper .btn-batal-profile:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+    text-decoration: none;
+}
+
+/* Warna Ikon Mata Pengintip Password Siswa */
+.siswa-wrapper .toggle-password {
+    color: #94a3b8;
+}
+.siswa-wrapper .toggle-password:hover {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+.siswa-wrapper .toggle-password.active {
+    background-color: #e0e7ff; /* Lingkaran Indigo soft */
+    color: #2563eb;
+}

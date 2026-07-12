@@ -1,0 +1,137 @@
+/* ==========================================================
+   MURNI WARNA & KOSMETIK TEMA GURU
+   ========================================================== */
+
+/* Tema Warna Sidebar Guru */
+.guru-wrapper .sidebar {
+  background-color: #111c3a;
+  color: #ffffff;
+}
+.guru-wrapper .sidebar-brand {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.guru-wrapper .sidebar-menu a {
+  color: #94a3b8;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.guru-wrapper .sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  padding-left: 20px;
+}
+.guru-wrapper .sidebar-menu a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+/* Background Area Content Guru */
+.guru-wrapper .content {
+  background-color: #f8fafc;
+}
+
+/* Warna Komponen Pencarian Guru */
+.guru-wrapper .input-cari:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+.guru-wrapper .btn-cari {
+  background-color: #2563eb;
+  border: 1px solid #1d4ed8;
+}
+.guru-wrapper .btn-cari:hover {
+  background-color: #1d4ed8;
+}
+
+/* Warna Kepala Tabel Guru */
+.guru-wrapper .table-guru th {
+  background-color: #2563eb;
+  color: white;
+}
+.guru-wrapper .table-guru td.col-fill {
+    text-align: left;
+}
+
+/* ==========================================================
+   KOSMETIK TEMA PROFIL & FORM UBAH PASSWORD - GURU
+   ========================================================== */
+
+/* Tampilan Detail Card Profil (Jika Guru pakai halaman profile) */
+.guru-wrapper .profile-header h2 { color: #1e293b; }
+.guru-wrapper .profile-header p { color: #64748b; }
+.guru-wrapper .table-profile td:first-child { color: #64748b; }
+.guru-wrapper .table-profile td:last-child { color: #334155; }
+.guru-wrapper .table-profile td strong { color: #1e293b; }
+.guru-wrapper .btn-edit-profile { background-color: #2563eb; color: #ffffff; }
+.guru-wrapper .btn-edit-profile:hover { background-color: #1d4ed8; }
+
+/* Komponen Form Input & Label */
+.guru-wrapper .form-group-profile label {
+    color: #64748b;
+}
+.guru-wrapper .input-profile {
+    color: #334155;
+}
+.guru-wrapper .input-profile:focus,
+.guru-wrapper .textarea-profile:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+.guru-wrapper .input-readonly {
+    color: #94a3b8;
+    background-color: #f8fafc;
+}
+
+/* Tombol Aksi */
+.guru-wrapper .btn-simpan-profile {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid #1d4ed8;
+    border-radius: 6px;
+    font-family: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.guru-wrapper .btn-simpan-profile:hover {
+    background-color: #1d4ed8;
+}
+
+.guru-wrapper .btn-batal-profile {
+    display: inline-block;  /* Mengubah sifat link <a> menjadi kotak tombol */
+    padding: 10px 20px;     /* Ini kuncinya! Memberi space luar-dalam agar warna background melebar */
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #cbd5e1; /* Garis tepi tipis biar makin tegas berbentuk tombol */
+    border-radius: 6px;     /* Sudut melengkung halus, samakan dengan tombol simpan */
+    text-decoration: none;  /* Menghilangkan garis bawah bawaan link */
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.guru-wrapper .btn-batal-profile:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+    text-decoration: none; /* Pastikan saat di-hover garis bawah tidak muncul lagi */
+}
+
+/* Tombol Pengintip Password Lingkaran */
+.guru-wrapper .toggle-password {
+    color: #94a3b8;
+}
+.guru-wrapper .toggle-password:hover {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+.guru-wrapper .toggle-password.active {
+    background-color: #e0e7ff; 
+    color: #2563eb;
+}

@@ -1,0 +1,9 @@
+/* Style khusus halaman forbidden (403) */
+
+.error-code {
+  color: #dc2626;
+}
+
+.error-message {
+  font-weight: bold;
+}

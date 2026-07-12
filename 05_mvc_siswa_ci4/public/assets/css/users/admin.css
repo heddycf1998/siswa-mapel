@@ -1,0 +1,384 @@
+/* ==========================================================
+   1. CORE LAYOUT & TEMA WARNA UTAMA ADMIN
+   ========================================================== */
+
+/* Tema Warna Sidebar Admin */
+.admin-wrapper .sidebar {
+    background-color: #1e293b; /* Dark Navy */
+    color: #ffffff;
+}
+
+.admin-wrapper .sidebar-brand {
+    color: #38bdf8; /* Cyan cerah */
+    border-bottom-color: #334155;
+}
+
+.admin-wrapper .sidebar-menu a {
+    color: #94a3b8;
+    transition: all 0.2s ease;
+}
+
+.admin-wrapper .sidebar-menu a:hover {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.admin-wrapper .sidebar-menu a.active {
+    background-color: #0284c7;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+/* Background Area Content */
+.admin-wrapper .content {
+    background-color: #f8fafc;
+}
+
+.admin-wrapper h1,
+.admin-wrapper h2 {
+    color: #1e293b;
+}
+
+
+/* ==========================================================
+   2. KOMPONEN TABEL DATA ADMIN
+   ========================================================== */
+
+/* Warna Kepala Tabel Admin */
+.admin-wrapper .table-admin th {
+    background-color: #1e3a8a; /* Navy Bold */
+    color: white;
+}
+
+/* Mengatur text-align khusus untuk kolom mapel di tabel milik guru */
+.guru-wrapper .table-guru td.col-fill {
+    text-align: left;
+}
+
+
+/* ==========================================================
+   3. TOMBOL AKSI UTAMA & FILTER (DASHBOARD/INDEX)
+   ========================================================== */
+
+/* Basis Standarisasi Semua Tombol Admin */
+.admin-wrapper .btn-tambah,
+.admin-wrapper .btn-cari,
+.admin-wrapper .btn-edit,
+.admin-wrapper .btn-hapus,
+.admin-wrapper .btn-submit,
+.admin-wrapper .btn-kembali,
+.admin-wrapper .btn-massal,
+.admin-wrapper .btn-aktifkan {
+    display: inline-block;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Tombol Tambah Data (Hijau Kosmetik GitHub) */
+.admin-wrapper .btn-tambah {
+    background-color: #2ea44f;
+    border: 1px solid #248742;
+    color: #ffffff;
+}
+.admin-wrapper .btn-tambah:hover {
+    background-color: #2c974b;
+}
+
+/* Bar Pencarian & Tombol Cari */
+.admin-wrapper .input-cari {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.admin-wrapper .input-cari:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.2);
+}
+
+.admin-wrapper .btn-cari {
+    background-color: #1e3a8a;
+    border: 1px solid #152a66;
+    color: #ffffff;
+}
+.admin-wrapper .btn-cari:hover {
+    background-color: #152a66;
+} 
+
+/* Tombol Aksi di Dalam Baris Tabel */
+.admin-wrapper .btn-edit {
+    background-color: #eab308;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+.admin-wrapper .btn-edit:hover {
+    background-color: #ca8a04;
+}
+
+.admin-wrapper .btn-hapus {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+.admin-wrapper .btn-hapus:hover {
+    background-color: #dc2626;
+}
+
+
+/* ==========================================================
+   4. STRUKTUR FORM INPUT & MODERN CHECKBOX GRID
+   ========================================================== */
+
+/* Wadah Utama Form (Full Width Card Melebar) */
+.admin-wrapper .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin-top: 20px auto 0;
+}
+
+/* Header Form */
+.admin-wrapper .form-header {
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* Group Input */
+.admin-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.admin-wrapper .form-group label {
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Elemen Input Utama Admin */
+.admin-wrapper .input-admin, 
+.admin-wrapper .textarea-admin {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.admin-wrapper .input-admin:focus, 
+.admin-wrapper .textarea-admin:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.15);
+    outline: none;
+}
+
+.admin-wrapper .textarea-admin {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+/* Grid Checkbox Mata Pelajaran */
+.admin-wrapper .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Pilihan Checkbox Berupa Card Kecil Interaktif */
+.admin-wrapper .checkbox-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+.admin-wrapper .checkbox-card:hover {
+    border-color: #1e3a8a;
+    background-color: #f0f4ff;
+}
+.admin-wrapper .checkbox-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #1e3a8a;
+}
+.admin-wrapper .checkbox-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+    cursor: pointer;
+}
+
+
+/* ==========================================================
+   5. TOMBOL EKSEKUSI DI DALAM FORM (SUBMIT & KEMBALI)
+   ========================================================== */
+.admin-wrapper .form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Tombol Submit / Simpan Form (Hijau Sukses) */
+.admin-wrapper .btn-submit {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+.admin-wrapper .btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Tombol Kembali / Batal Form (Abu-abu Netral) */
+.admin-wrapper .btn-kembali {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+.admin-wrapper .btn-kembali:hover {
+    background-color: #5a6268;
+}
+
+.admin-wrapper .btn-reset {
+    background-color: #f39c12; /* Orange Peringatan */
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.admin-wrapper .btn-reset:hover {
+    background-color: #d35400; /* Darker Orange */
+}
+
+/* ==========================================================
+   6. EXTENSION: CARD NOTIFIKASI UTAMA & DIAGRAM KUSTOM
+   ========================================================== */
+.admin-wrapper .dashboard-cards {
+    margin-bottom: 25px;
+}
+
+.admin-wrapper .card-stat {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-wrapper .card-info h3 {
+    font-size: 16px;
+    color: #64748b;
+    margin: 0 0 8px 0;
+}
+
+.admin-wrapper .card-info .stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1;
+}
+
+.admin-wrapper .card-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================
+   7. SEKSI KUSTOM: PROSES AKTIVASI AKUN
+   ========================================================== */
+
+/* Tombol Generate Massal Modern */
+.admin-wrapper .btn-massal {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #10b981; /* Emerald Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* Menjaga teks tidak patah ke bawah */
+}
+.admin-wrapper .btn-massal:hover {
+    background-color: #059669;
+}
+
+/* Tombol Aktifkan Satuan (Tabel) */
+.admin-wrapper .btn-aktifkan {
+    background-color: #3b82f6; /* Blue Modern */
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+.admin-wrapper .btn-aktifkan:hover {
+    background-color: #2563eb;
+}
+
+/* Pembungkus Tampilan Halaman Kosong (Empty State) */
+.admin-wrapper .empty-state-box {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.admin-wrapper .empty-state-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.admin-wrapper .empty-state-desc {
+    font-size: 15px;
+}
+
+/* Utility Helpers */
+.admin-wrapper .text-center {
+    text-align: center !important;
+}
+.admin-wrapper .m-0 {
+    margin: 0 !important;
+}
