@@ -1,174 +1,33 @@
-# CRUD Siswa & Mata Pelajaran
+# Academic Information System (CodeIgniter 4 & MySQL)
 
-Proyek ini adalah aplikasi sederhana untuk mengelola data **Siswa** dan **Mata Pelajaran**.  
-Fitur utama meliputi **Create, Read, Update, Delete (CRUD)** serta **login & register (authentication)**.
+Aplikasi manajemen data akademik untuk mengelola informasi siswa, mata pelajaran, dan hak akses multi-role. Repositori ini mendokumentasikan transformasi arsitektur kode dari pendekatan prosedural murni hingga framework MVC modern untuk menunjukkan proses peningkatan efisiensi kode dan pengelolaan database yang optimal.
 
-## 📌 Fitur
-- **Siswa**
-  - Tambah data siswa
-  - Edit data siswa
-  - Hapus data siswa
-  - Menampilkan daftar siswa
-  - Relasi siswa dengan mata pelajaran (many-to-many)
+## 🚀 Fitur Utama
+* **Multi-Role Authentication**: Akses sistem yang disesuaikan berdasarkan peran pengguna (Admin, Guru, dan Siswa).
+* **Manajemen Data (CRUD)**: Pengelolaan relasi data kompleks (Many-to-Many) antara Siswa dan Mata Pelajaran menggunakan SQL.
+* **Interactive UI & Security**: Validasi input di sisi server yang terintegrasi dengan SweetAlert2 untuk respon notifikasi yang interaktif.
 
-- **Mata Pelajaran**
-  - Tambah data mata pelajaran
-  - Edit data mata pelajaran
-  - Hapus data mata pelajaran
-  - Menampilkan daftar mata pelajaran
+## 🛠️ Teknologi & Tools
+* **Language**: PHP (CodeIgniter 4 Framework) & HTML/CSS
+* **Database & Information Systems**: MySQL / SQL (Perancangan Database Relasional)
+* **Library**: SweetAlert2 (JavaScript basis untuk notifikasi)
 
-- **Authentication**
-  - Register akun baru
-  - Login pengguna
-  - Session untuk menjaga keamanan
+## 📂 Peta Perjalanan Kode (Learning Path)
+Struktur kode di dalam repositori ini dibagi menjadi 5 tahap pengembangan:
+1. `01_procedural` – Tahap awal sistem menggunakan PHP native murni dan logika prosedural.
+2. `02_mvc_siswa` – Migrasi pertama untuk memisahkan logika ke dalam komponen Model, View, dan Controller (Campuran).
+3. `03_mvc_siswa_upgrade` – Rekayasa ulang struktur kode agar pemisahan folder MVC menjadi lebih rapi dan terorganisir.
+4. `04_mvc_siswa_upgrade_up` – Tahap persiapan tingkat lanjut agar transisi menuju framework profesional menjadi lebih mudah.
+5. `05_mvc_siswa_ci4` – Implementasi penuh menggunakan Framework CodeIgniter 4 dengan tambahan fitur keamanan Ubah Password berbasis SweetAlert.
 
-## 🏗️ Perjalanan Belajar
-Proyek ini saya buat sebagai bagian dari latihan belajar PHP & MySQL:
-1. **Versi Procedural**  
-   CRUD sederhana menggunakan PHP murni dengan `if else`.
-2. **Transisi ke MVC Campuran**  
-   Mulai mengenal konsep `Controller`, `Model`, dan `View`, tapi masih ada campuran procedural.
-3. **MVC Lebih Rapi**  
-   Struktur folder lebih teratur, ada `controller/`, `model/`, `view/`, `config/`.
-
-## 📂 Struktur Folder : 
-*(Lihat langsung di tab **Code** agar lebih rapih)*
-
-**1.** Procedural : Tahap Awal
-```
-procedural/
-├── mapel/ # CRUD mapel
-├── siswa/ # CRUD siswa
-├── auth.php # cek session
-├── dashboard.php # halaman awal
-├── koneksi.php # koneksi Database
-├── login_cek.php # login koneksi ke Database
-├── login.php # form login
-├── logout.php # session destroy
-├── nav.php # halaman navigasi
-├── register_proses.php # register koneksi ke Database
-├── register.php # form register
-```
-
-**2.** MVC-Siswa : Pisah File dan Campuran
-```
-mvc-siswa/
-├── app/
-│ ├── controller/
-│ │ ├── AuthController.php # Mengatur login & registrasi
-│ │ ├── SiswaController.php # CRUD data siswa
-│ │ ├── MapelController.php # CRUD data mata pelajaran
-│ ├── helper/
-│ │ ├── pagination.php # Halaman data
-│ ├── model/
-│ │ ├── Siswa.php # Model untuk data siswa
-│ │ ├── Mapel.php # Model untuk data mata pelajaran
-│ │ ├── SiswaMapel.php # Model relasi many-to-many siswa & mapel
-│ ├── view/
-│ │ ├── auth/ # View untuk login & registrasi
-│ │ ├── layout/ # View untuk kerangka dasar
-│ │ ├── mapel/ # View untuk mapel
-│ │ └── siswa/ # View untuk siswa
-│ │ └── 404.php # View untuk halaman kosong
-├── config/
-│ ├── koneksi.php # Koneksi ke database
-│ └── config.php # Konfigurasi global
-├── public/
-│ ├── style.css
-│ └── index.php # Router utama
-```
-
-**3.** MVC-Siswa : Lebih Rapih
-```
-mvc-siswa-upgrade/
-├── app/
-│ ├── controller/
-│ │ ├── AuthController.php # Mengatur login & registrasi
-│ │ ├── SiswaController.php # CRUD data siswa
-│ │ ├── MapelController.php # CRUD data mata pelajaran
-│ ├── helper/
-│ │ ├── pagination.php # Halaman data
-│ ├── model/
-│ │ ├── Siswa.php # Model untuk data siswa
-│ │ ├── Mapel.php # Model untuk data mata pelajaran
-│ │ ├── SiswaMapel.php # Model relasi many-to-many siswa & mapel
-│ ├── view/
-│ │ ├── auth/ # View untuk login & registrasi
-│ │ ├── layout/ # View untuk kerangka dasar
-│ │ ├── mapel/ # View untuk mapel
-│ │ └── siswa/ # View untuk siswa
-│ │ └── 404.php # View untuk halaman kosong
-├── config/
-│ ├── koneksi.php # Koneksi ke database
-│ └── config.php # Konfigurasi global
-├── public/
-│ ├── .htaccess # Konfigurasi Apache (URL rewriting)
-│ ├── index.php # Router utama
-│ └── style.css # File CSS untuk tampilan
-```
-
-**4.** MVC-Siswa : Punya 3 User
-```
-mvc-siswa/
-├── app/
-│ ├── controller/
-│ │ ├── AuthController.php # Mengatur login & registrasi
-│ │ ├── ErrorController.php # Mengatur Error
-│ │ ├── HomeController.php # Entry Point
-│ │ ├── SiswaController.php # CRUD data siswa
-│ │ ├── MapelController.php # CRUD data mata pelajaran
-│ ├── helper/
-│ │ ├── flash_helper # List Pesan
-│ │ ├── pagination.php # Halaman data
-│ │ ├── Flash.php # Mengatur Pesan
-│ ├── middleware
-│ │ ├── AuthMiddleware.php 
-│ │ ├── GuestMiddleware.php
-│ │ ├── RoleMiddelware.php 
-│ ├── model/
-│ │ ├── BaseModel.php 
-│ │ ├── Siswa.php # Model untuk data siswa
-│ │ ├── Mapel.php # Model untuk data mata pelajaran
-│ │ ├── SiswaMapel.php # Model relasi many-to-many siswa & mapel
-│ │ ├── User.php
-│ ├── view/
-│ │ ├── auth/ # View untuk login & registrasi
-│ │ ├── error # tempat Error 400 dan lainnya
-│ │ ├── layout/ # View untuk kerangka dasar
-│ │ ├── mapel/ # View untuk mapel
-│ │ ├── partial # Flash get key
-│ │ └── siswa/ # View untuk siswa
-├── config/
-│ ├── autoload.php # Otomatis cek Controller & Model
-│ ├── koneksi.php # Koneksi ke database
-│ ├── config.php # Konfigurasi global
-│ └── middleware.php # Akses URL untuk Role
-├── public/
-│ ├── .htaccess # Konfigurasi Apache (URL rewriting)
-│ ├── index.php # Router utama
-│ └── style.css # File CSS untuk tampilan
-```
-
-## ⚙️ Teknologi
-- **PHP** (Procedural → MVC campuran)
-- **MySQL** (phpMyAdmin)
-- **HTML, CSS**
-- **JavaScript** (sedikit, untuk interaksi dasar)
-
-## 🚀 Cara Menjalankan
-1. Clone repository:
+## ⚙️ Cara Menjalankan Project
+1. Clone repositori ini ke folder lokal komputer Anda.
+2. Pindahkan folder ke direktori server lokal (contoh: `xampp/htdocs/`).
+3. Buat database baru bernama `db_siswa` di phpMyAdmin, lalu import file `db_siswa.sql`.
+4. Buka terminal pada folder proyek CodeIgniter 4 (`05_mvc_siswa_ci4`), lalu jalankan perintah:
    ```bash
-   git clone https://github.com/username/mvc-siswa.git
-2. Import database :
-   - Buka phpMyAdmin
-   - Buat database `db_siswa`
-   - Import file `db_siswa.sql`
-3. Jalankan project di localhost atau XAMPP
-4. Akses melalui browser:
-   - procedural = http://localhost/procedural/login.php
-   - mvc campuran = http://localhost/mvc-siswa/public
-   - mcv lebih rapih = http://localhost/mvc-siswa/public
-
+   php spark serve
+   
 ## 🔑 Akun Default
 Username :
 ```
