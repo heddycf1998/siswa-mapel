@@ -1,68 +1,42 @@
-# CodeIgniter 4 Application Starter
+# Academic Information System (CodeIgniter 4 & MySQL)
 
-## What is CodeIgniter?
+Aplikasi manajemen data akademik untuk mengelola informasi siswa, mata pelajaran, dan hak akses multi-role. Repositori ini mendokumentasikan transformasi arsitektur kode dari pendekatan prosedural murni hingga framework MVC modern untuk menunjukkan proses peningkatan efisiensi kode dan pengelolaan database yang optimal.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 🚀 Fitur Utama
+* **Multi-Role Authentication**: Akses sistem yang disesuaikan berdasarkan peran pengguna (Admin, Guru, dan Siswa).
+* **Manajemen Data (CRUD)**: Pengelolaan relasi data kompleks (Many-to-Many) antara Siswa dan Mata Pelajaran menggunakan SQL.
+* **Interactive UI & Security**: Validasi input di sisi server yang terintegrasi dengan SweetAlert2 untuk respon notifikasi yang interaktif.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 🛠️ Teknologi & Tools
+* **Language**: PHP (CodeIgniter 4 Framework) & HTML/CSS
+* **Database & Information Systems**: MySQL / SQL (Perancangan Database Relasional)
+* **Library**: SweetAlert2 (JavaScript basis untuk notifikasi)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## 📂 Peta Perjalanan Kode (Learning Path)
+Struktur kode di dalam repositori ini dibagi menjadi 5 tahap pengembangan:
+1. `01_procedural` – Tahap awal sistem menggunakan PHP native murni dan logika prosedural.
+2. `02_mvc_siswa` – Migrasi pertama untuk memisahkan logika ke dalam komponen Model, View, dan Controller (Campuran).
+3. `03_mvc_siswa_upgrade` – Rekayasa ulang struktur kode agar pemisahan folder MVC menjadi lebih rapi dan terorganisir.
+4. `04_mvc_siswa_upgrade_up` – Tahap persiapan tingkat lanjut agar transisi menuju framework profesional menjadi lebih mudah.
+5. `05_mvc_siswa_ci4` – Implementasi penuh menggunakan Framework CodeIgniter 4 dengan tambahan fitur keamanan Ubah Password berbasis SweetAlert.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## ⚙️ Cara Menjalankan Project
+1. Clone repositori ini ke folder lokal komputer Anda.
+2. Pindahkan folder ke direktori server lokal (contoh: `xampp/htdocs/`).
+3. Buat database baru bernama `db_siswa` di phpMyAdmin, lalu import file `db_siswa.sql`.
+4. Buka terminal pada folder proyek CodeIgniter 4 (`05_mvc_siswa_ci4`), lalu jalankan perintah:
+   ```bash
+   php spark serve
+   
+## 🔑 Akun Default
+Username :
+```
+admin
+```
+Password :
+```
+admin123
+```
 
-## Installation & updates
-
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
-
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## 📝 Catatan
+Keep Moving Forward
