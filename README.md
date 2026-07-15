@@ -28,15 +28,20 @@ Struktur kode di dalam repositori ini dibagi menjadi 5 tahap pengembangan:
    ```bash
    php spark serve
    
-## 🔑 Akun Default
-Username :
-```
-admin
-```
-Password :
-```
-admin123
-```
+## 🌐 Demo Aplikasi
+Aplikasi sudah di-deploy secara live dan dapat diakses melalui: 
+[https://heddycahyafirdaus.freedev.app/](https://heddycahyafirdaus.freedev.app/)
+
+### 🔑 Akun Demo (Gunakan untuk mencoba):
+* **Admin**  
+  * Username: `admin`  
+  * Password: `admin123`  
+* **Guru**  
+  * Username: `guru1`  
+  * Password: `123456`  
+* **Siswa**  
+  * NIS: `10116309`  
+  * Password: `123123`
 
 ## 📝 Catatan
 Keep Moving Forward
